@@ -23,9 +23,14 @@ export default function Footer() {
                                         Home
                                     </Link>
                                 </li>
-                                <li>
+                                <li className="mb-4">
                                     <Link to="/about" className="hover:underline">
                                         About
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/community" className="hover:underline">
+                                        Community
                                     </Link>
                                 </li>
                             </ul>
@@ -35,7 +40,7 @@ export default function Footer() {
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <a
-                                        href="https://github.com/hiteshchoudhary"
+                                        href="https://github.com/Sruti-Patro/fitbit"
                                         className="hover:underline"
                                         target="_blank"
                                         rel="noreferrer"
@@ -121,7 +126,7 @@ export default function Footer() {
                             </svg>
                             <span className="sr-only">Twitter page</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="https://github.com/Sruti-Patro/fitbit" className="text-gray-500">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"

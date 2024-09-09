@@ -3,7 +3,7 @@ import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 import React from 'react';
 import App from './App';
-import { About, Contact, Home } from './components/Index';
+import { About, Community, Contact, Dashboard, Home } from './components/Index';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -11,6 +11,8 @@ const router = createBrowserRouter(
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
       <Route path='/contact' element={<Contact/>} />
+      <Route path='/community' element={<Community/>} />
+      <Route path='/dashboard' element={<Dashboard/>} />
     </Route>
   )
 )
