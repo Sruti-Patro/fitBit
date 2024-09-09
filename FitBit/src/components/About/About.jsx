@@ -25,7 +25,7 @@ export default function About() {
             image: maleUser,
         },
         {
-            name: "Asis Swain",
+            name: "Ashis Swain",
             role: "CEN",
             image: maleUser,
         },
