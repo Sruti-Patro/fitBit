@@ -4,9 +4,12 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import React from 'react';
 import App from './App';
 import { About, Community, Contact, Dashboard, Home } from './components/Index';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+  <>
     <Route path='/' element={<App/>}>
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About/>} />
@@ -14,6 +17,9 @@ const router = createBrowserRouter(
       <Route path='/community' element={<Community/>} />
       <Route path='/dashboard' element={<Dashboard/>} />
     </Route>
+    <Route path='/login' element={<Login/>} />
+    <Route path='/register' element={<Register/>} />
+  </>
   )
 )
 

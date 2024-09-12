@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import FitBit from "../../Assets/FitBit.png"
 
 // we do not use a tag as it refresh the page as whole, then whats the purpose of using react?
 //instead of a tag, we use link tag...advance version is navlink
@@ -8,15 +9,12 @@ export default function Header() {
                 <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
                     <div className="h-12 flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                         <Link to="/" className="flex items-center">
-                        <a
-                                href="#"
-                                className="text-gray-800 hover:bg-gray-100 font-medium rounded-lg text-2xl px-4 lg:px-5 py-2 lg:py-2.5 mr-2">
-                                    FitBit
-                            </a>
+                                    <img src={FitBit} alt="#" className="hover:bg-orange-100 font-medium rounded-lg h-10" />
+
                         </Link>
                         <div className="flex items-center lg:order-2">
                             <Link
-                                to="#"
+                                to="/login"
                                 className="text-gray-800 hover:bg-gray-100 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
                             >
                                 Log in
